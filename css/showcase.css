@@ -1,0 +1,502 @@
+@charset "utf-8";
+/********* BASIS ***********/
+
+.nietmobile {
+    display: none;
+}
+.desktop {
+    display: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+#top {
+    width: 100%;
+    height: 100%;
+    background-color: #AD1740;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #363131;
+    margin: 0;
+}
+
+#top nav ul .container{width:100%;}
+
+nav{
+    width:100%;
+}
+nav ul {
+    background-color: #363131;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+}
+nav ul li {
+    list-style-type: none;
+    padding-left: 0;
+    padding: 5% 0;
+    /*border-bottom: 4px solid #AD1740;* *roze*/
+    border-bottom: 4px solid #047093;
+    
+}
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: c;
+}
+footer {
+    background-color: #363131;
+    border-top: 4px solid #AD1740;
+    color: white;
+    margin-top: 20%;
+    padding:5% 0;
+}
+#skill article{
+    float:left;
+    width:40%;
+    margin-right:5%;
+}
+#skill article:nth-child(even){
+    margin-right:0;
+}
+#projectenhome article {
+    display: none;
+}
+
+/***** Flex box *****/
+#skill .flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width:100%;
+    height:15em;
+    justify-content:space-around;
+    flex-direction:column;
+    flex-wrap: wrap;
+}
+
+#skill .flex-item {
+    min-width:auto;
+    align-self:center;
+    padding:0 1.5%;
+    margin: 2% 0;
+}
+/***** Projecten Pagina *****/
+
+#projecten section article {
+    border: 1px solid #045D7A;
+    background-color: gainsboro;
+    margin: 10% 0;
+    height: 50%;
+    padding: 5%;
+}
+#projecten section article img {
+    margin: 0 6%;
+}
+
+
+/********* OPMAAK ***********/
+
+nav ul li a,
+nav ul li a:active,
+footer a,
+footer a:active {
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: #045D7A;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 300%;
+    text-align: center;
+    margin: 0;
+}
+#top h1 {
+    font-size: 300%;
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    padding:1% 0;
+}
+
+.fa-star,.fa-star-o,.fa-star-half-o{color:#AD1740;}
+.fa-star:hover,.fa-star-o:hover,.fa-star-half-o:hover{color:GoldenRod;}
+/**** Cv home pagina ****/
+
+#cv {
+    text-align: left;
+}
+#cv h1 {
+    line-height: 90%;
+}
+#cv h3 {
+    color: #AD1740;
+    margin: 2% 0 1% 0;
+}
+#cv .datum {
+    display: block;
+    color: #045D7A;
+}
+#cv strong {
+    font-weight: normal;
+    color: #045D7A;
+}
+#topcv {
+    margin-bottom: 1%;
+    margin-top: 5%;
+}
+.meer {
+    background-color: #AD1740;
+    color: white;
+    display: inline-block;
+    padding: 1%;
+    margin-top: 4%;
+    float: right;
+    text-align: left;
+}
+#vaardigheden p {
+    margin-top: 0;
+}
+
+/**** Projecten op home pagina ****/
+#projectenhome h3 {
+    clear: both;
+    margin-top: 3%;
+    text-align: left;
+}
+#projectenhome article h2 {
+    margin-top: 0;
+    margin-bottom: 1%;
+}
+/**** Projecten pagina**/
+
+#projecten h1 {
+    line-height: 105%;
+    margin-top: 5%;
+    font-size: 200%;
+}
+#projecten section article h2 {
+    margin-top: 0;
+}
+/**** Individuele projecten pagina's ****/
+
+.screenshot {
+    display: none;
+}
+@media screen and (max-width: 375px) {
+    #hobbies {
+        display: none;
+    }
+}
+/**************************************/
+/*********** TABLET LAY-OUT ***********/
+
+
+@media screen and (min-width: 375px) {
+    /**** Algemeen ****/
+    
+    .desktop {
+        display: none;
+    }
+    .nietmobile {
+        display: block;
+    }
+    nav ul {
+        padding-top: 1em;
+    }
+    nav ul li {
+        padding: 1em;
+    }
+    #cv article {
+        width: 45%;
+        margin-right: 5%;
+        float: left;
+    }
+    #skill article{
+    float:left;
+    width:30%;
+    margin-right:5%;
+    }
+    #skill article:nth-child(even){
+        margin-right:0;
+    }
+    
+    #top h1{
+        font-size:350%;
+    }
+    /***** Flex box SKILLS *****/
+    #skill .flex-container {
+        display: -webkit-flex;
+        display: flex;
+        width:100%;
+        height:15em;
+        justify-content:space-around;
+        flex-direction:column;
+        flex-wrap: wrap;
+    }
+
+    #skill .flex-item {
+        min-width:auto;
+        align-self:center;
+        padding:0 1.5%;
+        margin: 2% 0;
+    }
+
+    /***** Flex box HOBBIES*****/
+    .flex-containerhobbies {
+     display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: auto;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding:2%;
+    margin-bottom:2%;
+    }
+
+    .flex-itemhobby {
+    align-self:center;
+    padding:1.5%;
+    margin: none;
+    justify-content:space-around;
+    }
+    
+    /**** Hobbies ****/
+    .flex-itemhobby {
+        margin:0 auto;
+        text-align:center;
+    }
+    .flex-itemhobby img {
+        width: 7em;
+        height: 7em;
+        border-radius: 100%;
+    }
+       
+    /**** Footer ****/ 
+    footer {
+        padding: 3% 10%;
+    }
+    
+    footer section{float:left;}
+    
+    
+    /**** Projecten, toon 2 teasers ****/
+    
+    #projectenhome {
+        clear: both;
+    }
+    #projectenhome #laatste {
+        margin-right: 0;
+        display: none;
+    }
+    #projectenhome article {
+        display: block;
+        background-color: gainsboro;
+        width: 40%;
+        height: 50%;
+        padding: 2%;
+        float: left;
+        margin-right: 11.9%;
+        margin-top: 2%;
+        box-sizing: border-box;
+        border: 1px solid #045D7A;
+    }
+    #projectenhome #twee {
+        display: block;
+        margin-right: 0;
+    }
+    #projectenhome article img {
+        width: 80%;
+        margin: 5% 10%;
+    }
+    /**** Projecten pagina ****/
+    
+    #projecten section article {
+        margin: 10% 0;
+        height: 50%;
+        padding: 5%
+    }
+    #projecten section article img {
+        margin: 0;
+        margin-right: 5%;
+        margin-bottom: 5%;
+        float: left;
+    }
+    #projecten section article p {
+        margin-top: 0;
+    }
+    #projecten section article .meer {
+        float: none;
+        margin-top: 0;
+    }
+    .screenshot {
+        display: block;
+        height: 20%;
+        width: 30%;
+        float: left;
+        margin-right: 5%;
+    }
+    .screenshot:last-child {
+        margin-right: 0;
+    }
+}
+/**************************************/
+/*********** DESKTOP LAY-OUT **********/
+
+@media screen and (min-width: 800px) {
+    /**** Algemeen ****/
+    
+    .desktop {
+        display: block;
+    }
+    .nietmobile {
+        display: block;
+    }
+    
+    nav {
+        width: 100%;
+        clear: both;
+        background-color: #363131;
+        border-bottom: 4px solid #047093;
+        
+    }
+    nav ul {
+        width: 80%;
+        max-width:1100px;
+        margin: 0 auto;
+        padding: 0;
+        color: white;
+        
+    }
+    nav ul li {
+        list-style-type: none;
+        padding: 2% 2%;
+        border-bottom: none;
+        display: block;
+        float: left;
+    }
+    
+    nav ul li:hover{
+        background-color: #AD1740;
+    }
+    
+     
+    #skill article{
+    float:left;
+    width:13%;
+    margin-right:4%;
+    text-align:center;
+}
+    #skill article:nth-child(even){
+        margin-right:0;
+    }
+     /***** Flex box Skills*****/
+    #skill .flex-container {
+    width:auto;
+    height:auto;
+    flex-direction:row;
+    }
+
+    #skill .flex-item {
+        min-width:auto;
+        padding:0 1.5%;
+        margin: 0;
+    }
+ /***** Flex box HOBBIES*****/
+    .flex-containerhobbies {
+     display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: auto;
+   
+    }
+
+    .flex-itemhobby {
+    align-self:center;
+    padding:0 1.5%;
+    margin: none;
+    justify-content:space-around;
+    }
+    /**** Projecten home, 3 tonen ****/
+    
+    #projectenhome article {
+        display: block;
+        background-color: gainsboro;
+        width: 30%;
+        height: 50%;
+        padding: 2%;
+        float: left;
+        margin-right: 5%;
+    }
+    #projectenhome #twee {
+        margin-right: 5%;
+    }
+    #projectenhome #laatste {
+        display: block;
+        margin-right: 0;
+    }
+    #projectenhome {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    /**** Footer ****/
+    footer {
+        margin:0;
+        margin-top: 5%;
+        padding: 2.5% 10%;
+    }
+   
+    footer img {
+        float: left;
+        width: 7em;
+        margin-right: 2%;
+        margin-top:-1%;
+    }
+    footer section{
+        float:none;
+        width:80%;
+        margin:0;
+        
+    }
+    /*footer .container{
+        width:80%;
+        margin:0;
+    }*/
+    /**** Projecten pagina ****/
+    
+    #projecten section article {
+        margin: 5% 0;
+        padding: 3%;
+    }
+    #projecten section article img {
+        margin: 0;
+        margin-right: 2%;
+        margin-bottom: 0;
+        float: left;
+    }
+}
+/************************************/
+/********* clearfix hack ***********/
+
+.clearFix:before,
+.clearFix:after {
+    content: " ";
+    display: table;
+}
+.clearFix:after {
+    clear: both;
+}
+/* enkel voor IE6/7  */
+
+.clearFix {
+    *zoom: 1;
+}
