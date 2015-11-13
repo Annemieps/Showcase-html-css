@@ -1,12 +1,10 @@
 @charset "utf-8";
 /********* BASIS ***********/
 
-.nietmobile {
+.nietmobile,.desktop {
     display: none;
 }
-.desktop {
-    display: none;
-}
+
 body {
     margin: 0;
     padding: 0;
@@ -40,10 +38,9 @@ nav ul li {
     list-style-type: none;
     padding-left: 0;
     padding: 5% 0;
-    /*border-bottom: 4px solid #AD1740;* *roze*/
-    border-bottom: 4px solid #047093;
-    
+   border-bottom: 4px solid #047093;
 }
+
 .container {
     width: 80%;
     max-width: 1100px;
@@ -52,16 +49,12 @@ nav ul li {
 }
 footer {
     background-color: #363131;
-    border-top: 4px solid #AD1740;
+    border-top: 4px solid #047093;
     color: white;
     margin-top: 20%;
     padding:5% 0;
 }
-#skill article{
-    float:left;
-    width:40%;
-    margin-right:5%;
-}
+
 #skill article:nth-child(even){
     margin-right:0;
 }
@@ -89,7 +82,7 @@ footer {
 /***** Projecten Pagina *****/
 
 #projecten section article {
-    border: 1px solid #045D7A;
+    border: 1px solid #047093;
     background-color: gainsboro;
     margin: 10% 0;
     height: 50%;
@@ -98,7 +91,6 @@ footer {
 #projecten section article img {
     margin: 0 6%;
 }
-
 
 /********* OPMAAK ***********/
 
@@ -178,11 +170,7 @@ h1 {
 }
 /**** Projecten pagina**/
 
-#projecten h1 {
-    line-height: 105%;
-    margin-top: 5%;
-    font-size: 200%;
-}
+
 #projecten section article h2 {
     margin-top: 0;
 }
@@ -196,6 +184,7 @@ h1 {
         display: none;
     }
 }
+
 /**************************************/
 /*********** TABLET LAY-OUT ***********/
 
@@ -252,21 +241,18 @@ h1 {
 
     /***** Flex box HOBBIES*****/
     .flex-containerhobbies {
-     display: -webkit-flex;
+    display: -webkit-flex;
     display: flex;
     width: 100%;
     height: auto;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding:2%;
-    margin-bottom:2%;
+    margin:2% 0;
+    justify-content:space-between;
     }
 
     .flex-itemhobby {
-    align-self:center;
-    padding:1.5%;
-    margin: none;
-    justify-content:space-around;
+    margin:0;
     }
     
     /**** Hobbies ****/
@@ -410,21 +396,7 @@ h1 {
         padding:0 1.5%;
         margin: 0;
     }
- /***** Flex box HOBBIES*****/
-    .flex-containerhobbies {
-     display: -webkit-flex;
-    display: flex;
-    width: 100%;
-    height: auto;
-   
-    }
-
-    .flex-itemhobby {
-    align-self:center;
-    padding:0 1.5%;
-    margin: none;
-    justify-content:space-around;
-    }
+ 
     /**** Projecten home, 3 tonen ****/
     
     #projectenhome article {
@@ -463,14 +435,14 @@ h1 {
     }
     footer section{
         float:none;
-        width:80%;
         margin:0;
-        
     }
+    
     /*footer .container{
         width:80%;
         margin:0;
     }*/
+    
     /**** Projecten pagina ****/
     
     #projecten section article {
